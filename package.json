@@ -1,0 +1,32 @@
+{
+  "name": "be",
+  "version": "1.0.0",
+  "description": "hieuhoccode",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hieukinang/hoc-BE.git"
+  },
+  "keywords": [
+    "node",
+    "js"
+  ],
+  "author": "hieu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hieukinang/hoc-BE/issues"
+  },
+  "homepage": "https://github.com/hieukinang/hoc-BE#readme",
+  "dependencies": {
+    "dotenv": "16.4.7",
+    "ejs": "3.1.10",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "nodemon": "3.1.9"
+  }
+}
