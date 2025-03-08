@@ -10,6 +10,9 @@ router.get('/', (req, res) => {
 router.get('/xxx', (req, res) => {
     res.send("dcm nghich")
 })
+router.get('/xh', (req, res) => {
+    res.send("dcm nghichvl")
+})
 router.get('/cc', (req, res) => {
     res.render("sample.ejs")
 })
