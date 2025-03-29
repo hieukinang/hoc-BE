@@ -7,6 +7,8 @@ const path = require('path')
 const configViewEngine = require('./config/viewEngine')
 const hostname = process.env.hostname
 const webRouter = require('./routes/web')
+const connection = require('./config/database.js')
+
 
 //config template 
 configViewEngine(app);
@@ -18,4 +20,14 @@ app.listen(port, hostname, () => {
     console.log(`listen on ${port}`)
 })
 
-//xong 24
+
+
+
+connection.query(
+    'select	* from users',
+    function (err, results, fields) {
+        console.log("hehehe", results)
+    }
+)
+
+//xong 30
